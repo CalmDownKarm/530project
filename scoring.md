@@ -2,7 +2,7 @@
 
 ## Metrics
 
-### F1 score ([reference]())
+### F1 score ([reference](https://en.wikipedia.org/wiki/F-score))
 The F1 score is the harmonic mean of precision and recall and represents a measure of the test's accuracy. Values range from 0-1. Precision is the proportion of correct positive predictions among the total number of positive predictions. Recall is the number of correct positive predictions among the total number of actual positive observations. The following equations are used to compute F1 score:
 ```
 Precision = TP / (TP + FP)
