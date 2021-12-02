@@ -53,7 +53,7 @@ id,y
 
 We run the following command using these files:
 
-`$ score.py [-h] -p predicted.csv -a actual.csv`
+`$ python3 score.py -p predicted.csv -a actual.csv`
 
 Here is the output:
 ```
