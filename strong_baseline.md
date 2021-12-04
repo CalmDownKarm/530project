@@ -4,4 +4,4 @@ The idea we had here with the strong baseline is: for a specific game, we predic
 This baseline has an F1 of 0.58 and Accuracy of 0.54
 
 # Generating a baseline
-Look at simple_baseline.py, change the string baseline on line 5  to either HOME_TEAM_WINS or TEXT_BASELINE to create a predictions file that the scorer.py will accept. Default storage location is ./data/
+strong_baseline.py creates a prediction file (strong_baseline_preds.csv) that the scorer.py will accept. Default storage location is ./data/
