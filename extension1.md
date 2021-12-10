@@ -6,3 +6,5 @@ The model achieves an accuracy of .56 and an f1 score of .67 which is better in 
 This extension depends on the Fastai library - and assumes the data is already preprocessed, ie the tweets for all the games are concatenated together in the dataframe. 
 
 to run the code, create a folder called data in the same directory as the script with the preprocessed data file, then run ```python extension1fastai.py```
+
+Draft slides link is [here](https://docs.google.com/presentation/d/10z4qcG4d7wZwoTZlxVuOm5S3LmVmiN-iO5aBOSC46Ds/edit?usp=sharing)
