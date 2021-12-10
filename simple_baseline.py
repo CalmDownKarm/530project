@@ -1,5 +1,6 @@
 from pathlib import Path
 import pandas as pd
+import numpy as np
 
 # HOME_TEAM_WINS or TEXT_BASELINE
 baseline = "HOME_TEAM_WINS"
@@ -18,11 +19,11 @@ tweet_counts = (
     .reset_index()[["game_id", "team_nick", "id"]]
 )
 relevant_game_ids = tweets_for_games.game_id.unique()
+relevant_game_ids = [str(int(ID)) for ID in relevant_game_ids if np.isnan(ID)==False]
 dataset_games = all_games[all_games["GAME_ID"].isin(relevant_game_ids)]
 
 teams = pd.read_csv(dir / "teams.csv")
 nicks_to_id = {team.NICKNAME: team.TEAM_ID for _, team in teams.iterrows()}
-
 
 def get_higher_number_of_tweets(row):
     home_team_counts = tweet_counts[
@@ -36,7 +37,6 @@ def get_higher_number_of_tweets(row):
     if home_team_counts >= away_team_counts:
         return 1
     return 0
-
 
 if baseline == "HOME_TEAM_WINS":
     home_team_wins_baseline_preds = pd.DataFrame(
