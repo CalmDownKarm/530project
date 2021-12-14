@@ -3,3 +3,5 @@ Dataset :https://www.kaggle.com/nathanlauga/nba-games Includes games from 4 Oct2
 https://github.com/twintproject/twint/wiki/Configuration Twint configuration
 
 Apparently twint is a little broken here's the version I'm using, it seems to work git+https://github.com/twintproject/twint.git@e7c8a0c764f6879188e5c21e25fb6f1f856a7221
+
+Final report: https://www.overleaf.com/6324992318qjykhtfvxrzd
